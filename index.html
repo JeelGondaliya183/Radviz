@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <script src = "https://d3js.org/d3.v5.min.js"></script>
+        
+</head>
+<body>
+    <div>
+        <h4>Color Opacity Scale</h4>
+        <span class="leftlabel">0</span>
+        <input id ="opacity_bar" type="range" min="0" max="100" value="100" style="width: 500px; margin-right: 10px;"/>
+        <span class="rightlabel">100</span>
+    </div>
+    <h4>Choose Dataset</h4>
+    <select id="d3-dropdown">
+        <option value="White Wine Quality" selected="selected">White Wine Quality</option>
+        <option value="Red Wine Quality">Red Wine Quality</option>
+        <option value="iris">iris</option>
+    </select>
+</br>
+</br>
+
+    <button id=Button_cluster>Color Scale according to Clustering</button>
+    <button id=Button_column>color Scale according to Class</button>
+      
+    <p id="selected-dropdown"></p> 
+      <script src = "index.js"></script>
+<style>
+div.tooltip {	
+    position: absolute;			
+    text-align: center;							
+    background: rgb(255, 128, 0);	
+    border-radius: 8px;			
+    pointer-events: none;			
+}
+</style>
+
+
+</body>
+</html>
+
+
+<!--- 
+
+References:
+[1]J. Aerts, "Radviz rewrite in D3", Visual Data Analysis Lab, 2019. [Online]. Available: http://vda-lab.github.io/2014/02/radviz-rewrite-in-d3. [Accessed: 07- Jul- 2019].
+[2]"Simple d3.js tooltips", Bl.ocks.org, 2019. [Online]. Available: http://bl.ocks.org/d3noob/a22c42db65eb00d4e369. [Accessed: 07- Jul- 2019].
+[3]"Change objects opacity", Bl.ocks.org, 2019. [Online]. Available: https://bl.ocks.org/EfratVil/2bcc4bf35e28ae789de238926ee1ef05. [Accessed: 07- Jul- 2019].
+[4]"WYanChao/RadViz", GitHub, 2019. [Online]. Available: https://github.com/WYanChao/RadViz. [Accessed: 07- Jul- 2019].
+[5][5]2019. [Online]. Available: https://codepen.io/tarsusi/pen/reovOV. [Accessed: 28- Jul- 2019].
+note: My code only works in Firefox as it is not browser compatible.
+-->
